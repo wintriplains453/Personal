@@ -1,0 +1,93 @@
+@use './variables.scss';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: variables.$baseIndent;
+  background: variables.$themeBackground;
+}
+.mainBlockInfo {
+  margin-left: 30px;
+}
+
+.aboutMeWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.aboutMeProfile {
+  padding: 10px;
+  max-width: 60%;
+  margin-right: variables.$baseIndent;
+}
+.aboutMeProfileHeader {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: variables.$baseIndent;
+}
+.aboutMeProfileFooter {
+  padding: variables.$baseIndent;
+  margin-top: 50px;
+}
+
+.circleProfile {
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background: grey;
+  margin-right: 10px;
+}
+
+.aboutMeSocial {
+  width: 40%;
+  button {
+    margin-bottom: 15px;
+  }
+}
+
+.worksHeader {
+  width: 100%;
+  padding: 20px;
+  margin-top: variables.$baseIndent;
+  display: flex;
+  justify-content: space-between;
+  p {
+    cursor: pointer;
+  }
+}
+
+.worksWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapperWorkItem {
+  margin-top: variables.$baseIndent;
+  margin-right: variables.$baseIndent;
+  height: 400px;
+  cursor: pointer;
+  flex-basis: calc(50% - variables.$baseIndent);
+  transition: width 0.3s ease;
+  &:hover {
+    filter: blur(.7px);
+  }
+  &:hover .cardsTextTop {
+    width: 40%;
+    transition: width 0.3s;
+  }
+}
+
+.BezlimitGolden {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(141.08deg, #efce73 25.79%, #fef0b7 63.66%, #cea86f 97.07%);
+  -webkit-background-clip: text;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  border-bottom: 1px solid purple;
+}

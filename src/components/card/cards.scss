@@ -1,0 +1,58 @@
+@use '../../variables.scss';
+
+.wrapperCards {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 50%;
+  height: 96%;
+  box-sizing: border-box;
+}
+.wrapperContentCards {
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  user-select: 0;
+  border-radius: 0px 20px 0px 20px;
+  background: variables.$baseColorBlocks;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapperTitleBlock {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardsTextTop, .cardsTextBottom {
+  position: absolute;
+  background: variables.$themeBackground;
+  padding: 5px 30px;
+  width: 30%;
+  text-align: center;
+  transition: width 0.3s ease;
+  
+}
+.cardsTextTop {
+  top: 0;
+  left: 0;
+  border-radius: 0px 0px 20px;
+}
+.cardsTextBottom {
+  bottom: 0;
+  right: 0;
+  border-radius: 20px 0px 0px 0;
+}
+
+.cardImage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba($color: #fff, $alpha: .2);
+  margin: 20px 0;
+}
