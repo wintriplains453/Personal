@@ -165,6 +165,33 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #00361e;
 }
 
+.Vabao {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(141.08deg, #9f9fff 25.79%, #3878F4 63.66%, #677EB9 94.07%);
+  -webkit-background-clip: text;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  border-bottom: 1px solid #00361e;
+}
+.Particle {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(141.08deg, #ffffff 25.79%, #900909 63.66%, #caa09b 94.07%);
+  -webkit-background-clip: text;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  border-bottom: 1px solid #00361e;
+}
+
 .wrapperFooter {
   background: #fff;
   border-radius: 12px;

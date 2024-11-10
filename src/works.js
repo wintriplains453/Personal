@@ -23,13 +23,13 @@ const works = [
   },
   {
     id: 3,
-    title: "Todos",
-    className: "TodosApp",
-    image: "todos.png",
-    description: " Todos — это мини-приложение для создания списка дел, которое предлагает ряд функций для удобного управления задачами. Пользователи могут добавлять, удалять, сортировать и очищать элементы списка, обеспечивая простой и эффективный способ организации своих дел.",
-    gitLink: "https://github.com/wintriplains453/TodoList",
-    stack: " React, SASS, React-icons",
-    siteLink: "https://wintriplains453.github.io/TodoList/",
+    title: "Vabao",
+    className: "Vabao",
+    image: "vabao.png",
+    description: " Vabao — это макет многостраничного и отзывчивого сайта, предназначенного для покупки и продажи аккаунтов. Данный макет не включает серверную часть и служит исключительно демонстрацией классической вёрстки на чистом HTML и CSS.",
+    gitLink: "https://github.com/wintriplains453/Vabao?tab=readme-ov-file",
+    stack: " HTML, SASS, CSS, JavaScript",
+    siteLink: "https://wintriplains453.github.io/Vabao",
     mobile: "Да"
   },
   {
@@ -42,7 +42,29 @@ const works = [
     stack: " React, SASS, GSAP, Locomotive-scroll, React-input-pin-code, react-router-dom",
     siteLink: "https://wintriplains453.github.io/Bezlimit-len/",
     mobile: "Нет"
-  }
+  },
+  {
+    id: 5,
+    title: "Todos",
+    className: "TodosApp",
+    image: "todos.png",
+    description: " Todos — это мини-приложение для создания списка дел, которое предлагает ряд функций для удобного управления задачами. Пользователи могут добавлять, удалять, сортировать и очищать элементы списка, обеспечивая простой и эффективный способ организации своих дел.",
+    gitLink: "https://github.com/wintriplains453/TodoList",
+    stack: " React, SASS, React-icons",
+    siteLink: "https://wintriplains453.github.io/TodoList/",
+    mobile: "Да"
+  },
+  {
+    id: 6,
+    title: "Particle",
+    className: "Particle",
+    image: "particle.png",
+    description: " Particle — это мини-приложение, разработанное с использованием сторонней библиотеки",
+    gitLink: "https://github.com/wintriplains453/Particle",
+    stack: " React, SASS, React-icons",
+    siteLink: "https://wintriplains453.github.io/Particle/",
+    mobile: "Да"
+  },
 ]
 
 export default works
