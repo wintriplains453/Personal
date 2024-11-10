@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Personal/static/css/main.6476366a.css",
+    "main.js": "/Personal/static/js/main.b7b6de6c.js",
+    "static/js/453.b3efecc2.chunk.js": "/Personal/static/js/453.b3efecc2.chunk.js",
+    "static/media/RobotoFlex-Regular.ttf": "/Personal/static/media/RobotoFlex-Regular.34b447cc3641782c240a.ttf",
+    "index.html": "/Personal/index.html",
+    "main.6476366a.css.map": "/Personal/static/css/main.6476366a.css.map",
+    "main.b7b6de6c.js.map": "/Personal/static/js/main.b7b6de6c.js.map",
+    "453.b3efecc2.chunk.js.map": "/Personal/static/js/453.b3efecc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6476366a.css",
+    "static/js/main.b7b6de6c.js"
+  ]
+}
