@@ -18,7 +18,21 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  .LinkSites {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    text-decoration: none;
+    color: #017792;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: #055d71;
+    }
+  }
 }
 .wrapperTitleBlock {
   height: 100%;
@@ -31,7 +45,7 @@
   position: absolute;
   background: variables.$themeBackground;
   padding: 5px 30px;
-  width: 30%;
+  width: 50%;
   text-align: center;
   transition: width 0.3s ease;
   
@@ -47,12 +61,60 @@
   border-radius: 20px 0px 0px 0;
 }
 
+.contentCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 50px 20px;
+  position: relative;
+  .wrapperImageCards {
+    width: 100%;
+    text-align: center;
+  }
+}
 .cardImage {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 500px;
+  width: 80%;
   aspect-ratio: 1 / 1;
   border: 1px solid rgba($color: #fff, $alpha: .2);
-  margin: 20px 0;
+  margin: 20px 20px;
+  margin-left: auto;
+}
+
+.contentCardDescription {
+  max-width: 80%;
+  b {
+    color: #777777;
+    margin-left: 10px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  a {
+    color: #017792;
+  }
+}
+#title {
+  font-size: 2rem;
+}
+@media screen and (max-width: 1850px)  {
+  #title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1650px)  {
+  #title {
+    font-size: 1.2rem;
+  }
+  .contentCardDescription {
+    max-width: 98%;
+  }
+  .cardImage {
+    width: 90%; 
+  }
+  .contentCards {
+    margin: 50px 5px;
+  }
 }

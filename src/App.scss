@@ -1,5 +1,29 @@
 @use './variables.scss';
 
+@font-face {
+  font-family: 'RobotMedium';
+  src: url(./Fonts/RobotoFlex-Regular.ttf);
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+
+* {
+  font-family: 'RobotMedium';
+  font-weight: 100;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: variables.$themeBackground;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background: variables.$baseColorBlocks;      /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,8 +65,9 @@
 
 .aboutMeSocial {
   width: 40%;
-  button {
+  button, a {
     margin-bottom: 15px;
+    text-decoration: none;
   }
 }
 
@@ -52,8 +77,13 @@
   margin-top: variables.$baseIndent;
   display: flex;
   justify-content: space-between;
-  p {
-    cursor: pointer;
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: #868686;
+    }
   }
 }
 
@@ -73,11 +103,12 @@
     filter: blur(.7px);
   }
   &:hover .cardsTextTop {
-    width: 40%;
+    width: 60%;
     transition: width 0.3s;
   }
 }
 
+//SPECIAL CLASSES
 .BezlimitGolden {
   -webkit-text-fill-color: #0000;
   background: linear-gradient(141.08deg, #efce73 25.79%, #fef0b7 63.66%, #cea86f 97.07%);
@@ -90,4 +121,88 @@
   letter-spacing: 10px;
   text-align: center;
   border-bottom: 1px solid purple;
+}
+
+.PAYMENTS {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(141.08deg, #ffffff 25.79%, #3300ff 46.66%, #ff0000 97.07%);
+  -webkit-background-clip: text;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.TodosApp {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(141.08deg, #ffffff 25.79%, #787878 63.66%, #232323 94.07%);
+  -webkit-background-clip: text;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.EyeApp {
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(141.08deg, #006c14 25.79%, #015613 63.66%, #00442d 94.07%);
+  -webkit-background-clip: text;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  white-space: nowrap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  border-bottom: 1px solid #00361e;
+}
+
+.wrapperFooter {
+  background: #fff;
+  border-radius: 12px;
+  padding: 50px;
+  color: #000;
+  margin-top: variables.$baseIndent;
+}
+
+.footerContentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.createBy {
+  width: 100%;
+  padding: 15px;
+  text-align: end;
+}
+
+
+@media screen and (max-width: 1650px) {
+  .wrapperWorkItem {
+    flex-basis: calc(100% - 15px);
+  }  
+}
+@media screen and (max-width: 1250px) {
+  .aboutMeWrapper {
+    flex-direction: column;
+  }
+  .aboutMeProfile {
+    max-width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .aboutMeSocial {
+    width: 100%;
+  }
+  .wrapperFooter {
+    padding: 10px;
+  }
 }
