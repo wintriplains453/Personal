@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import CardsBlock from './components/card/cards';
-import OpenGraphMeta from '../OpenGraphMeta';
+import OpenGraphMeta from './OpenGraphMeta';
 
 import works from './works';
 import { IoIosSend } from "react-icons/io";
