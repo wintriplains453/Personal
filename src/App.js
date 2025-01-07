@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import CardsBlock from './components/card/cards';
+import OpenGraphMeta from '../OpenGraphMeta';
 
 import works from './works';
 import { IoIosSend } from "react-icons/io";
@@ -16,7 +17,6 @@ function App() {
   useEffect(() => {
     const handleResize = () => {
       setWindowSize(window.innerWidth);
-      console.log(windowSize)
     };
 
     window.addEventListener('resize', handleResize);
@@ -115,6 +115,18 @@ function App() {
         </div>      
       </> : <p>Сайт отключен для мобильных устройств и планшетов</p>    
       }
+      <div>
+        <OpenGraphMeta
+          title="My Awesome Page"
+          description="Сайт портфолио с некоторыми небольшими работами"
+          url="https://wintriplains453.github.io/Personal/"
+          image="https://wintriplains453.github.io/Personal/src/Assets/preview.png"
+          siteName="Мой сайт"
+        />
+
+        <h1>Добро пожаловать на мой сайт портфолио</h1>
+        <p>Сайт показывает мои работы на некоторых языках программирования, почти все результаты проектов можно посмотреть через этот сайт кликая по ссылкам</p>
+      </div>
     </div>
   );
 }
